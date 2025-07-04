@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- <input type="text"/>
+    <button onclick="addTodo()">Add to Do!</button>
+ 
+<script>
+    function addTodo() {
+        const value = document.querySelector("input").value;
+
+        // Create new span and button
+        const spanEl = document.createElement("span");
+        spanEl.innerHTML = value;
+
+        const buttonEl = document.createElement("button");
+        buttonEl.innerHTML = "Delete";
+
+        // Optional: Add delete functionality
+        buttonEl.onclick = function () {
+            divEl.remove();
+        };
+
+        // Create a container div
+        const divEl = document.createElement("div");
+        divEl.appendChild(spanEl);
+        divEl.appendChild(buttonEl);
+
+        // Add the div to the body
+        document.querySelector("body").appendChild(divEl);
+
+        // Clear input
+        document.querySelector("input").value = "";
+    }
+</script> -->
+
+ <input type="text"/>
+ <button onclick="addTodo()">Add to do!</button>
+ <script>
+function addTodo(){
+    todos.push({
+title:document.querySelector("input").value 
+    })
+    render();
+
+}
+function deleteTodo(){
+    render();
+}
+function render(){
+    for(let i=0; i<todos.length; i++){
+        const todo= toodos[i];
+        const div = document.createElement("div");
+    const h1= document.createElement("h1");
+    const button= document.createElement("button");
+    button.innerHTML="Delete";
+    h1.innerHTML= todo.title;
+    div.append(h1);
+    div.append(button);
+    }
+}
+ </script>
+
+</body>
+</html>

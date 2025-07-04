@@ -1,0 +1,19 @@
+{
+  "name": "week-17",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dev": "tsc -b && node ./dist/index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@types/mongoose": "^5.11.96",
+    "@types/pg": "^8.15.4",
+    "mongoose": "^8.16.0",
+    "pg": "^8.16.1",
+    "typescript": "^5.8.3"
+  }
+}
